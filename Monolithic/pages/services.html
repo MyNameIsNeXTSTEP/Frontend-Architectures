@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Services - Monolithic Frontend Template Features"
+    />
+    <title>Services - Monolithic Frontend Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1>
+            <a
+              href="../index.html"
+              style="text-decoration: none; color: inherit"
+              >Monolithic App</a
+            >
+          </h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link active">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="section active">
+        <div class="container">
+          <h1>Our Services</h1>
+
+          <div class="hero" style="margin-bottom: 3rem">
+            <h2>Everything You Need to Build Great Frontends</h2>
+            <p>
+              Comprehensive features and tools designed for modern web
+              development
+            </p>
+          </div>
+
+          <div class="services-grid">
+            <div class="service-item">
+              <h3>🏗️ Component Architecture</h3>
+              <p>
+                Modular component system that promotes code reusability and
+                maintainability. Build complex UIs with simple, composable
+                pieces.
+              </p>
+              <div class="badge badge-primary">Core Feature</div>
+            </div>
+
+            <div class="service-item">
+              <h3>🎨 Responsive Design</h3>
+              <p>
+                Mobile-first CSS framework with flexible grid system and
+                responsive components that work beautifully on all devices.
+              </p>
+              <div class="badge badge-success">Ready to Use</div>
+            </div>
+
+            <div class="service-item">
+              <h3>🔄 State Management</h3>
+              <p>
+                Lightweight state management solution that handles application
+                state without the complexity of larger frameworks.
+              </p>
+              <div class="badge badge-info">Built-in</div>
+            </div>
+
+            <div class="service-item">
+              <h3>📋 Form Handling</h3>
+              <p>
+                Complete form management system with validation, error handling,
+                and seamless user experience.
+              </p>
+              <div class="badge badge-warning">Enhanced</div>
+            </div>
+
+            <div class="service-item">
+              <h3>🧭 Navigation System</h3>
+              <p>
+                Client-side routing with history management, providing smooth
+                single-page application experience.
+              </p>
+              <div class="badge badge-primary">SPA Ready</div>
+            </div>
+
+            <div class="service-item">
+              <h3>🔔 Notifications</h3>
+              <p>
+                User-friendly notification system for success messages, errors,
+                warnings, and general information.
+              </p>
+              <div class="badge badge-success">Interactive</div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Feature Comparison</h2>
+            <div class="card">
+              <div class="card-body">
+                <div class="tabs">
+                  <div class="tab-nav">
+                    <button
+                      class="tab-button active"
+                      onclick="showTab('basic')"
+                    >
+                      Basic Features
+                    </button>
+                    <button class="tab-button" onclick="showTab('advanced')">
+                      Advanced Features
+                    </button>
+                    <button class="tab-button" onclick="showTab('development')">
+                      Development Tools
+                    </button>
+                  </div>
+
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="basic">
+                      <h3>Basic Features</h3>
+                      <ul style="padding-left: 2rem; margin: 1rem 0">
+                        <li>✅ Semantic HTML5 structure</li>
+                        <li>✅ Modern CSS with Flexbox and Grid</li>
+                        <li>✅ Responsive design system</li>
+                        <li>✅ Cross-browser compatibility</li>
+                        <li>✅ Accessibility features</li>
+                        <li>✅ SEO-friendly markup</li>
+                      </ul>
+                    </div>
+
+                    <div class="tab-pane" id="advanced">
+                      <h3>Advanced Features</h3>
+                      <ul style="padding-left: 2rem; margin: 1rem 0">
+                        <li>🚀 State management system</li>
+                        <li>🎯 Component-based architecture</li>
+                        <li>📱 Progressive Web App ready</li>
+                        <li>⚡ Lazy loading and optimization</li>
+                        <li>🔒 Form validation and security</li>
+                        <li>📊 Performance monitoring</li>
+                      </ul>
+                    </div>
+
+                    <div class="tab-pane" id="development">
+                      <h3>Development Tools</h3>
+                      <ul style="padding-left: 2rem; margin: 1rem 0">
+                        <li>🛠️ Development server included</li>
+                        <li>📝 Comprehensive documentation</li>
+                        <li>🧪 Testing framework ready</li>
+                        <li>📦 No build process required</li>
+                        <li>🔄 Hot reload capabilities</li>
+                        <li>🐛 Debug tools and helpers</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Performance Metrics</h2>
+            <div
+              style="
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+              "
+            >
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Load Time</h3>
+                </div>
+                <div class="card-body text-center">
+                  <div
+                    class="stat-number"
+                    style="font-size: 2.5rem; color: #28a745"
+                  >
+                    < 1s
+                  </div>
+                  <p>First Contentful Paint</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Bundle Size</h3>
+                </div>
+                <div class="card-body text-center">
+                  <div
+                    class="stat-number"
+                    style="font-size: 2.5rem; color: #007bff"
+                  >
+                    15KB
+                  </div>
+                  <p>Gzipped CSS + JS</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 85%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Lighthouse Score</h3>
+                </div>
+                <div class="card-body text-center">
+                  <div
+                    class="stat-number"
+                    style="font-size: 2.5rem; color: #ffc107"
+                  >
+                    98
+                  </div>
+                  <p>Performance Score</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 98%"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Accessibility</h3>
+                </div>
+                <div class="card-body text-center">
+                  <div
+                    class="stat-number"
+                    style="font-size: 2.5rem; color: #17a2b8"
+                  >
+                    100
+                  </div>
+                  <p>WCAG Compliance</p>
+                  <div class="progress">
+                    <div class="progress-bar" style="width: 100%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Browser Support</h2>
+            <div class="card">
+              <div class="card-body">
+                <div
+                  style="
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                    gap: 1rem;
+                    text-align: center;
+                  "
+                >
+                  <div>
+                    <h4>Chrome</h4>
+                    <div class="badge badge-success">90+</div>
+                  </div>
+                  <div>
+                    <h4>Firefox</h4>
+                    <div class="badge badge-success">88+</div>
+                  </div>
+                  <div>
+                    <h4>Safari</h4>
+                    <div class="badge badge-success">14+</div>
+                  </div>
+                  <div>
+                    <h4>Edge</h4>
+                    <div class="badge badge-success">90+</div>
+                  </div>
+                  <div>
+                    <h4>iOS Safari</h4>
+                    <div class="badge badge-warning">14+</div>
+                  </div>
+                  <div>
+                    <h4>Android</h4>
+                    <div class="badge badge-success">90+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0; text-align: center">
+            <h2>Ready to Get Started?</h2>
+            <p style="margin: 1rem 0">
+              Choose the perfect plan for your project needs
+            </p>
+            <div style="display: inline-flex; gap: 1rem; margin-top: 2rem">
+              <button
+                class="btn btn-primary"
+                onclick="showInfo('Template is free to use!')"
+              >
+                Download Template
+              </button>
+              <button
+                class="btn btn-secondary"
+                onclick="showSuccess('Documentation coming soon!')"
+              >
+                View Documentation
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Monolithic Frontend Template. Built with ❤️ using vanilla
+          HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Notification Component -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../src/store/state.js"></script>
+    <script src="../src/components/notification.js"></script>
+
+    <script>
+      // Initialize page
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile navigation
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+        }
+
+        // Animate progress bars when in view
+        const progressBars = document.querySelectorAll(".progress-bar");
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const progressBar = entry.target;
+              const width = progressBar.style.width;
+              progressBar.style.width = "0%";
+              setTimeout(() => {
+                progressBar.style.width = width;
+              }, 100);
+              observer.unobserve(progressBar);
+            }
+          });
+        });
+
+        progressBars.forEach((bar) => observer.observe(bar));
+      });
+
+      // Tab functionality
+      function showTab(tabId) {
+        // Hide all tab panes
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+          pane.classList.remove("active");
+        });
+
+        // Remove active class from all buttons
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.remove("active");
+        });
+
+        // Show selected tab
+        document.getElementById(tabId).classList.add("active");
+        event.target.classList.add("active");
+      }
+    </script>
+  </body>
+</html>

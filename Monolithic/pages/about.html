@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About our Classical Monolithic Frontend Template"
+    />
+    <title>About - Monolithic Frontend Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1>
+            <a
+              href="../index.html"
+              style="text-decoration: none; color: inherit"
+              >Monolithic App</a
+            >
+          </h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link active">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="section active">
+        <div class="container">
+          <h1>About Our Template</h1>
+
+          <div class="hero" style="margin-bottom: 3rem">
+            <h2>Building Better Frontend Experiences</h2>
+            <p>
+              A comprehensive template designed for developers who value
+              simplicity and efficiency
+            </p>
+          </div>
+
+          <div class="features">
+            <div class="feature-card">
+              <h3>🚀 Performance First</h3>
+              <p>
+                Optimized for speed with minimal dependencies and efficient code
+                structure. Every component is designed with performance in mind.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <h3>📱 Responsive Design</h3>
+              <p>
+                Mobile-first approach ensuring your application looks and works
+                perfectly on all devices and screen sizes.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <h3>🔧 Developer Friendly</h3>
+              <p>
+                Clear structure, comprehensive documentation, and development
+                tools that make building and maintaining applications a breeze.
+              </p>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Our Philosophy</h2>
+            <div class="card">
+              <div class="card-body">
+                <p>
+                  We believe that frontend development should be accessible,
+                  efficient, and enjoyable. This template embodies our core
+                  principles:
+                </p>
+
+                <ul style="margin: 1.5rem 0; padding-left: 2rem">
+                  <li>
+                    <strong>Simplicity:</strong> Clean, understandable code that
+                    any developer can work with
+                  </li>
+                  <li>
+                    <strong>Scalability:</strong> Architecture that grows with
+                    your project needs
+                  </li>
+                  <li>
+                    <strong>Performance:</strong> Fast loading times and smooth
+                    user experiences
+                  </li>
+                  <li>
+                    <strong>Maintainability:</strong> Well-organized structure
+                    that's easy to update and extend
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Technical Features</h2>
+            <div class="services-grid">
+              <div class="service-item">
+                <h3>State Management</h3>
+                <p>
+                  Lightweight state management system that handles application
+                  state without the complexity of larger frameworks.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h3>Component Architecture</h3>
+                <p>
+                  Modular component system using vanilla JavaScript that
+                  promotes reusability and maintainability.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h3>Form Handling</h3>
+                <p>
+                  Comprehensive form management with validation, submission
+                  handling, and user feedback.
+                </p>
+              </div>
+
+              <div class="service-item">
+                <h3>Navigation System</h3>
+                <p>
+                  Client-side routing that provides a smooth single-page
+                  application experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Getting Started</h2>
+            <div class="card">
+              <div class="card-body">
+                <p>Ready to start building? Here's how easy it is:</p>
+
+                <ol style="margin: 1.5rem 0; padding-left: 2rem">
+                  <li>Clone or download the template</li>
+                  <li>Open <code>index.html</code> in your browser</li>
+                  <li>Start customizing the content and styles</li>
+                  <li>Add your own components and pages</li>
+                  <li>Deploy anywhere - no build process required!</li>
+                </ol>
+
+                <button
+                  class="btn btn-primary"
+                  onclick="showSuccess('Let\\'s build something amazing!')"
+                >
+                  Start Building
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Monolithic Frontend Template. Built with ❤️ using vanilla
+          HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Notification Component -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../src/store/state.js"></script>
+    <script src="../src/components/notification.js"></script>
+    <script>
+      // Simple navigation for multi-page setup
+      document.addEventListener("DOMContentLoaded", () => {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
