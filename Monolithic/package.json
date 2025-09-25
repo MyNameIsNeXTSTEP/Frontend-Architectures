@@ -1,0 +1,58 @@
+{
+  "name": "monolithic-frontend-template",
+  "version": "1.0.0",
+  "description": "A simple classical monolithic frontend template for small to medium projects",
+  "main": "index.html",
+  "scripts": {
+    "start": "node dev-server.js",
+    "dev": "node dev-server.js",
+    "serve": "node dev-server.js",
+    "test": "echo \"No tests specified. Open index.html in browser to test manually.\" && exit 0",
+    "build": "echo \"No build process required. Files are ready for deployment.\" && exit 0",
+    "deploy": "echo \"Copy all files to your web server or hosting platform.\" && exit 0"
+  },
+  "keywords": [
+    "frontend",
+    "template",
+    "monolithic",
+    "vanilla",
+    "html",
+    "css",
+    "javascript",
+    "responsive",
+    "spa",
+    "components"
+  ],
+  "author": "Monolithic Frontend Template",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/monolithic-frontend-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/monolithic-frontend-template/issues"
+  },
+  "homepage": "https://github.com/your-username/monolithic-frontend-template#readme",
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "files": [
+    "index.html",
+    "assets/",
+    "src/",
+    "pages/",
+    "public/",
+    "dev-server.js",
+    "dev-server.py",
+    "package.json",
+    "README.md"
+  ]
+}
