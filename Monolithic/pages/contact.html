@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Contact us - Monolithic Frontend Template"
+    />
+    <title>Contact - Monolithic Frontend Template</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <link rel="stylesheet" href="../assets/css/components.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+
+    <style>
+      .error-message {
+        color: #dc3545;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+      }
+
+      .form-group input.error,
+      .form-group textarea.error {
+        border-color: #dc3545;
+      }
+
+      .form-group input.valid,
+      .form-group textarea.valid {
+        border-color: #28a745;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="nav-brand">
+          <h1>
+            <a
+              href="../index.html"
+              style="text-decoration: none; color: inherit"
+              >Monolithic App</a
+            >
+          </h1>
+        </div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link active">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <section class="section active">
+        <div class="container">
+          <h1>Contact Us</h1>
+
+          <div class="hero" style="margin-bottom: 3rem">
+            <h2>Get in Touch</h2>
+            <p>
+              We'd love to hear from you. Send us a message and we'll respond as
+              soon as possible.
+            </p>
+          </div>
+
+          <div
+            style="
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              gap: 3rem;
+              margin-bottom: 3rem;
+            "
+          >
+            <div>
+              <h2>Contact Information</h2>
+              <div class="card">
+                <div class="card-body">
+                  <div style="margin-bottom: 1.5rem">
+                    <h4>📧 Email</h4>
+                    <p>hello@monolithictemplate.com</p>
+                  </div>
+
+                  <div style="margin-bottom: 1.5rem">
+                    <h4>📱 Phone</h4>
+                    <p>+1 (555) 123-4567</p>
+                  </div>
+
+                  <div style="margin-bottom: 1.5rem">
+                    <h4>📍 Address</h4>
+                    <p>123 Developer Street<br />Code City, CC 12345</p>
+                  </div>
+
+                  <div>
+                    <h4>⏰ Business Hours</h4>
+                    <p>
+                      Monday - Friday: 9:00 AM - 6:00 PM<br />Weekend: 10:00 AM
+                      - 4:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2>Send a Message</h2>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="name">Full Name *</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="2"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address *</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject *</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    minlength="5"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message *</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    minlength="10"
+                  ></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label>
+                    <input
+                      type="checkbox"
+                      id="newsletter"
+                      name="newsletter"
+                      style="margin-right: 0.5rem"
+                    />
+                    Subscribe to our newsletter for updates
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div style="margin: 4rem 0">
+            <h2>Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <h3 class="accordion-title">
+                    How do I get started with the template?
+                  </h3>
+                  <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    <p>
+                      Getting started is simple! Just download the template,
+                      open the index.html file in your browser, and start
+                      customizing. No build process or complex setup required.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <h3 class="accordion-title">
+                    Can I use this template for commercial projects?
+                  </h3>
+                  <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    <p>
+                      Yes! This template is free to use for both personal and
+                      commercial projects. Feel free to modify it to suit your
+                      needs.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <h3 class="accordion-title">
+                    Do you provide support for customization?
+                  </h3>
+                  <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    <p>
+                      We provide documentation and examples to help you
+                      customize the template. For additional support, please
+                      contact us through this form.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-header" onclick="toggleAccordion(this)">
+                  <h3 class="accordion-title">
+                    How do I add new pages or components?
+                  </h3>
+                  <span class="accordion-icon">▼</span>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-body">
+                    <p>
+                      The template is designed to be easily extensible. Check
+                      out the documentation for detailed instructions on adding
+                      new pages and creating custom components.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; 2024 Monolithic Frontend Template. Built with️ using vanilla
+          HTML, CSS, and JavaScript.
+        </p>
+      </div>
+    </footer>
+
+    <!-- Notification Component -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../src/store/state.js"></script>
+    <script src="../src/components/notification.js"></script>
+    <script src="../src/components/form.js"></script>
+
+    <script>
+      // Initialize page
+      document.addEventListener("DOMContentLoaded", () => {
+        // Mobile navigation
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+
+        if (hamburger && navMenu) {
+          hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+          });
+        }
+
+        // Custom form submission handler
+        if (window.formManager) {
+          const contactForm = document.getElementById("contactForm");
+          if (contactForm) {
+            window.formManager.registerForm(contactForm, {
+              onSubmit: async (formData, formId) => {
+                // Simulate API call
+                await new Promise((resolve) => setTimeout(resolve, 1500));
+
+                console.log("Contact form submitted:", formData);
+
+                // Show success message
+                showSuccess(
+                  "Thank you for your message! We'll get back to you soon."
+                );
+
+                // Reset form
+                window.formManager.resetForm(formId);
+              },
+              resetOnSubmit: false,
+              validateOnChange: true,
+            });
+          }
+        }
+      });
+
+      // Accordion functionality
+      function toggleAccordion(header) {
+        const content = header.nextElementSibling;
+        const icon = header.querySelector(".accordion-icon");
+
+        // Close other accordions
+        document.querySelectorAll(".accordion-header").forEach((h) => {
+          if (h !== header) {
+            h.classList.remove("active");
+            h.nextElementSibling.classList.remove("active");
+            h.querySelector(".accordion-icon").style.transform = "rotate(0deg)";
+          }
+        });
+
+        // Toggle current accordion
+        header.classList.toggle("active");
+        content.classList.toggle("active");
+
+        if (header.classList.contains("active")) {
+          icon.style.transform = "rotate(180deg)";
+        } else {
+          icon.style.transform = "rotate(0deg)";
+        }
+      }
+    </script>
+
+    <style>
+      @media screen and (max-width: 768px) {
+        .container > div[style*="grid"] {
+          grid-template-columns: 1fr !important;
+          gap: 2rem !important;
+        }
+      }
+    </style>
+  </body>
+</html>
