@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA - JSON Placeholder Demo</title>
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SPA demo</h1>
+            <p>Simple SPA showcasing API integration</p>
+        </header>
+
+        <main>
+            <!-- API Selection Widget -->
+            <div class="widget-container">
+                <div class="selection-widget">
+                    <h2>Get Data from JSONPlaceholder</h2>
+                    <label for="api-form">Select a data type</label>
+                    <form id="api-form">
+                        <div class="radio-group">
+                            <label class="radio-option">
+                                <input type="radio" name="dataType" value="posts" checked>
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">Posts</span>
+                                <small>User blog posts</small>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="dataType" value="comments">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">Comments</span>
+                                <small>Post comments</small>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="dataType" value="albums">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">Albums</span>
+                                <small>Photo albums</small>
+                            </label>
+                            <label class="radio-option">
+                                <input type="radio" name="dataType" value="photos">
+                                <span class="radio-custom"></span>
+                                <span class="radio-label">Photos</span>
+                                <small>Album photos</small>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span class="btn-text">Fetch Data</span>
+                            <div class="loading-spinner" style="display: none;"></div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Results Display -->
+            <div class="results-container" id="results-container" style="display: none;">
+                <div class="results-header">
+                    <h2 id="results-title">Results</h2>
+                    <button class="clear-btn" id="clear-results">Clear Results</button>
+                </div>
+                <div class="results-grid" id="results-grid">
+                    <!-- Results will be populated here -->
+                </div>
+            </div>
+
+            <!-- Loading State -->
+            <div class="loading-state" id="loading-state" style="display: none;">
+                <div class="spinner"></div>
+                <p>Fetching data...</p>
+            </div>
+
+            <!-- Error State -->
+            <div class="error-state" id="error-state" style="display: none;">
+                <div class="error-icon">⚠️</div>
+                <h3>Oops! Something went wrong</h3>
+                <p id="error-message">Failed to fetch data. Please try again.</p>
+                <button class="retry-btn" id="retry-btn">Retry</button>
+            </div>
+        </main>
+
+        <footer>
+            <p>Data provided by <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSONPlaceholder</a></p>
+        </footer>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
