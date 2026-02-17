@@ -14,7 +14,7 @@ class SPAApp {
     this.resultsTitle = document.getElementById("results-title");
     this.resultsGrid = document.getElementById("results-grid");
     this.clearBtn = document.getElementById("clear-results");
-    this.loadingState = document.getElementById("loading-state");
+    this.loadingState = document.getElementById("loading-state"); // { isPending: boolean, isDone: boolean, isError: boolean, username: 'Islam' } // -> changed Model!
     this.errorState = document.getElementById("error-state");
     this.errorMessage = document.getElementById("error-message");
     this.retryBtn = document.getElementById("retry-btn");

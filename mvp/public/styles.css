@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f5f9;
+}
+
+.card {
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 24px;
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #ccd4db;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #f9fbfc;
+}
